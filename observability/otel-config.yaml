@@ -1,1 +1,17 @@
+receivers:
+  otlp:
+    protocols:
+      http:
+      grpc:
 
+exporters:
+  otlp:
+    endpoint: https://ingest.monitor.azure.com
+    headers:
+      Authorization: "Bearer ${AZURE_MONITOR_TOKEN}"
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      exporters: [otlp]
