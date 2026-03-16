@@ -1,1 +1,12 @@
+Analyse ce projet logiciel.
 
+Fichiers présents :
+{file_list}
+
+Réponds :
+
+1. Stack principale
+2. Framework détecté
+3. Base de données probable
+4. Commande de build
+5. Commande de lancement
